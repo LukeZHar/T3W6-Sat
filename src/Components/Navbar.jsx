@@ -1,11 +1,10 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "../styles/Navbar.css"
 
 export default function Navbar() {
     return (
         <nav>
             <h1>Example Navbar Content</h1>
-            <Link to={"/"}>Home </Link>
             <NavLink 
                 to={"/"} 
                 className={({isActive}) => { return isActive ? "active" : ""}}>
