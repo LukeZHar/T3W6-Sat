@@ -17,6 +17,14 @@ export default function Navbar() {
                 to={"/contact"} 
                 className={({isActive}) => { return isActive ? "active" : ""}}>
                 Contact </NavLink>
+            <NavLink 
+                to={"/projects"} 
+                className={({isActive}) => { return isActive ? "active" : ""}} end>
+                Projects </NavLink>
+            <NavLink 
+                to={"/projects/terminalApp"} 
+                className={({isActive}) => { return isActive ? "active" : ""}}>
+                Terminal App Project </NavLink>
         </nav>
     )
 }
